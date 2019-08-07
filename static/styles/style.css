@@ -1,0 +1,770 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Helvetica'), local('Lato-Black'), local('Lato-Semibold'), local('OpenSans-Regular'), local('OpenSans-Semibold'),
+         url('../fonts/Helvetica.ttc') format('ttc'),
+         url('../fonts/Lato-Black.ttf') format('ttf'),
+         url('../fonts/Lato-Semibold.ttf') format('ttf'),
+         url('../fonts/OpenSans-Bold.ttf') format('ttf'),
+         url('../fonts/OpenSans-Regular.ttf') format('ttf'),
+         url('../fonts/OpenSans-Semibold.ttf') format('ttf');
+  }
+
+body {
+    font-family: "Lato", sans-serif;
+}
+i.err-msg {
+    color: #e7a40f;
+    font-size: 11px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height:450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0;
+    }
+}
+
+.navbar-dark {
+    background: #000;
+    width: 100%;
+}
+
+.navbar {
+    height: 80px;
+    padding: 0.1em 1em;
+    padding-right: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+.toggle_menu {
+    /* filter: invert(1); */
+    cursor: pointer;
+    margin: 0.5em 1em;
+}
+
+.logo {
+    color: #d4d4d4;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0.5em 2em;
+    border: 1.5px solid #ff4057;
+    border-radius: 25px;
+    width: max-content;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.callus {
+    color: #ff4057;
+    text-transform: uppercase;
+    padding: 0.5em 2em;
+    border: 1.5px solid #d4d4d4;
+    font-weight: bold;
+    border-radius: 25px;
+    width: max-content;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    margin: 0 1.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+nav .row {
+    width: 100%;
+}
+
+.d_flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80px;
+    width: 100%;
+}
+
+.d_flex .row {
+    width: 100%;
+}
+
+.d_flex .text-right {
+    text-align: right;
+    float: right;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+.help {
+    padding: 0.5em 2em;
+    color: #ff4057;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media (max-width: 664px) {
+    .d_flex .row {
+        margin-left: -27px;
+    }
+    .logo {
+        padding: 0.5em;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .callus {
+        padding: 0.5em;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin: 0 0.25em;
+    }
+    .help {
+        padding: 0.5em 4px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 601px) {
+    .d_flex .row {
+        margin-left: -13px;
+    }
+    .logo {
+        padding: 0.75em;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .callus {
+        padding: 0.75em;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin: 0 1em;
+    }
+    .help {
+        padding: 0.75em 4px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
+
+/* Header End */
+
+section.background {
+    background: url('../../static/images/bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50vh 0;
+    position: relative;
+    margin-top: 80px;
+}
+
+.title {
+    position: absolute;
+    z-index: 50;
+    top: 5%;
+    left: 0;
+    right: 0;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: calc(100% + 6em);
+    opacity: 0.2;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0;
+        padding-right: 8px;
+    }
+    .main {
+        transition: margin-left .5s;
+        padding: 8px;
+        margin: 0 !important;
+    }
+    .toggle_menu {
+        margin: 0.65em;
+    }
+    .logo {
+        padding: 0.175em 1.25em;
+        font-size: 16px;
+    }
+}
+
+.flight {
+    position: absolute;
+    z-index: 100;
+    top: 30%;
+    width: 66%;
+    left: 17%;
+    height: auto;
+    color: #fff;
+    background: #1f2748;
+    border-radius: 0 30px 30px 30px;
+    padding: 1em;
+    background-size: auto;
+}
+
+h5.title_flight {
+    background: #1f2748;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    top: 25%;
+    left: 17%;
+    color: #fff;
+    padding: 0.5em 2em 1.5em 2em;
+    font-size: 12px;
+    font-weight: bold;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-transform: uppercase;
+}
+
+.mb-3 label {
+    font-size: 11px;
+    margin-right: 1em;
+    letter-spacing: 1.5px;
+}
+
+.form-group label {
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #7b8196;
+    white-space: nowrap;
+}
+
+.form-group select, .form-control {
+    font-size: 13px;
+    border-radius: 0 !important;
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0.75em;
+    height: 45px;
+    font-weight: lighter;
+    color: #888888;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.mb-3.right .form-check {
+    position: absolute;
+    top: 1.25em;
+    right: 0;
+}
+
+.top-0 {
+    margin-top: -16px;
+}
+
+@media (max-width: 768px) {
+    .mb-3.right .form-check {
+        top: 3em;
+    }
+    .mb-3 {
+        margin-bottom: 4px !important;
+    }
+}
+
+.form-group .select_box1 {
+    font-size: 13px;
+    border-radius: 0 !important;
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0.75em;
+    height: 45px;
+    font-weight: lighter;
+    background: #fff;
+    color: #888888;
+}
+
+/* .select_box1 div {
+    display: block !important;
+} */
+
+.select_box1 input {
+    width: 100%;
+    padding: 0.9em;
+    margin-top: -7px;
+    border: none !important;
+    color: #777;
+    font-size: 13px;
+}
+
+.select_box:after, .select_box1:after {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #3b55e6;
+    position: absolute;
+    z-index: 1;
+    top: 3em;
+    right: 1.75em;
+    content: "";
+}
+
+.select_box1:after {
+    top: 3.5em;
+    content:'';
+}
+
+.form-group .date .react-datepicker-wrapper {
+    width: 100% !important;
+}
+
+.date .react-datepicker__input-container {
+    position: relative;
+    display: inline-block;
+    width: 100% !important;
+}
+
+.date .react-datepicker__input-container>input {
+    width: 100% !important;
+    background: #fff !important;
+    border: none !important;
+    color: #777 !important;
+    text-align: left !important;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.form-group .date .fa {
+    position: absolute;
+    right: 0.5em;
+    z-index: 5;
+    color: #3b55e6;
+    top: 0.5em;
+}
+
+.date {
+    position: relative;
+}
+
+.arrow i.fa.fa-angle-up {
+    top: 2em;
+}
+
+.arrow i.fa {
+    position: absolute;
+    right: 1.6em;
+    color: #3b55e6;
+    top: 3.25em;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.mb-3.top-0 .form-check.form-check-inline {
+    margin-top: 6px;
+}
+
+/* .form-check.form-check-inline {
+    margin-top: 6px;
+} */
+
+/* CSS for Radio Button styles */
+
+input[type=radio] {
+    width: 18px;
+    height: 18px;
+    border: none;
+    background: #ffffff;
+}
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: #ffffff;
+}
+
+input[type="checkbox"]:checked:before {
+    background: #111111;
+}
+
+input[type="radio"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #000000;
+}
+
+
+input.sort_name[type=radio] {
+    width: 18px;
+    height: 18px;
+    border: none;
+    background: #ffffff;
+}
+
+input.sort_name[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: #ffffff;
+}
+
+input.sort_name[type="checkbox"]:checked:before {
+    background: #111111;
+}
+
+input.sort_name[type="radio"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #dc3545;
+}
+
+/* CSS End for Radio Button Styles */
+
+.btn-danger:not(:disabled):not(.disabled).active:focus, .btn-danger:not(:disabled):not(.disabled):active:focus, .show>.btn-danger.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+button.form-control.btn.btn-danger:hover, button.form-control.btn.btn-danger:focus, button.form-control.btn.btn-danger:visited, button.form-control.btn.btn-danger:active, button.form-control.btn.btn-danger:focus-within {
+    background: #dc3545;
+    color: #ffffff;
+}
+
+button.form-control.btn.btn-danger {
+    margin-top: 2.4em;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+img.flight_img {
+    margin-left: -12px;
+    margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+    section.background {
+        background: #283361;
+        padding: 0 0 10vh 0;
+    }
+    .flight {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+    h5.title_flight {
+        position: relative;
+        margin: 0;
+        left: 0;
+        width: 28%;
+    }
+    .title {
+        position: relative;
+        font-size: 5em;
+        padding: 0;
+    }
+}
+
+/* Next Section Four Images CSS Start */
+
+.nextBG {
+    background: url('../../static/images/lake.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5vh 0;
+}
+
+.img_round img {
+    border-radius: 50%;
+    border: 1px dashed #fff;
+    padding: 0.3em;
+}
+
+.img_round {
+    padding: 15%;
+    border-radius: 50%;
+}
+
+.count {
+    position: absolute;
+    right: 16%;
+    color: #fff;
+    top: 16%;
+    background: #03A9F4;
+    width: 2.5em;
+    height: 2.5em;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    font-size: 13px;
+    font-weight: lighter;
+    justify-content: center;
+}
+/* CSS for Radio Button styles */
+
+.radio_btn input[type=radio] {
+    width: 18px;
+    height: 18px;
+    border: none;
+    background: #ffffff;
+}
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: #ffffff;
+}
+
+input[type="checkbox"]:checked:before {
+    background: #111111;
+}
+
+.radio_btn input[type="radio"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #000000;
+}
+
+/* CSS End for Radio Button Styles */
+
+@media (max-width: 1200px) and (min-width: 992px){
+    .count {
+        right: 20%;
+        top: 20%;
+    }
+}
+
+.service h5 {
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -16px;
+    font-weight: bold;
+}
+
+.service p {
+    color: #ddd;
+    text-align: center;
+    line-height: 1.25;
+    font-size: 11px;
+}
+
+section.footer {
+    background: #010512;
+    color: #fff;
+    padding: 2.5em 0 0.5em 0;
+    border-top: 3px solid #ff4057;
+}
+
+.social-media {
+    display: inline-flex;
+}
+
+.social-media .twitter {
+    margin-right: 0.7em;
+}
+
+.footer h6 b {
+    letter-spacing: 1.75px;
+}
+
+.footer h6 {
+    margin-bottom: 1em;
+}
+
+.footer ul {
+    padding-left: 16px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 2;
+}
+
+input.inp_mail {
+    border-radius: 25px !important;
+    background: transparent !important;
+    border: 1.5px solid #fff;
+    color: #fff !important;
+    padding-left: 2em;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input.inp_mail:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+
+.e_mail {
+    position: absolute;
+    top: 2.25em;
+    right: 1em;
+    width: 72px;
+    height: 42px;
+    background: #fff;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.e_mail img {
+    width: 26px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+p.f_para {
+    font-size: 11px;
+    line-height: 1.25;
+}
+
+p.address {
+    font-size: 15px;
+    margin-top: 0.75em;
+    line-height: 1.25;
+    letter-spacing: 1.1px;
+}
+
+.footer .col-sm-12 {
+    margin-bottom: 2.5em;
+}
+
+@media (max-width: 450px) {
+    .logo {
+        font-size: 13px;
+        padding: 0.5em;
+    }
+}
+
+img.fa.fa-fighter-jet {
+    filter: invert(0.3);
+}
+
+.menu .item p {
+    color: #777;
+    margin-bottom: 0;
+    padding: 8px;
+}
+
+.item {
+    padding: 8px;
+    cursor: default;
+}
+
+.menu .item-highlighted {
+    color: white !important;
+    padding: 8px;
+    background-color: #dc3545;
+}
+
+.menu .item-highlighted p {
+    color: white !important;
+}
+
+.menu .item p span {
+    margin-left: 2.5em;
+}
+
+.item.item-highlighted .fa-fighter-jet {
+    filter: invert(1);
+}
+
+@media(max-width:768px)
+{
+    .row
+    {
+        
+    }
+}

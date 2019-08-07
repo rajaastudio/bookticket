@@ -1,0 +1,264 @@
+{
+    "countries":[
+    {
+        "PlaceId": "BOM",
+        "PlaceName": "Chhatrapati Shivaji Maharaj International",
+        "LocalizedPlaceName": "",
+        "CountryId": "IN",
+        "CityId": "IBOM",
+        "CountryName": "India",
+        "PlaceNameEn": "",
+        "RegionId": "",
+        "CityName": "Mumbai",
+        "CityNameEn": "",
+        "GeoId": "95673320",
+        "GeoContainerId": "27539520",
+        "Location": "19.088056,72.851667",
+        "ResultingPhrase": "Chhatrapati Shivaji Maharaj International (BOM), Mumbai|Maharashtra|India",
+        "Highlighting": [
+            [
+                0,
+                1
+            ]
+        ]
+    },
+    {
+        "PlaceId": "MAA",
+        "PlaceName": "Chennai",
+        "LocalizedPlaceName": "",
+        "CountryId": "IN",
+        "CityId": "IMAA",
+        "CountryName": "India",
+        "PlaceNameEn": "",
+        "RegionId": "",
+        "CityName": "Chennai",
+        "CityNameEn": "",
+        "GeoId": "95673361",
+        "GeoContainerId": "32575954",
+        "Location": "12.993333,80.176944",
+        "ResultingPhrase": "Chennai (MAA), Chennai|Madras|Tamil Nadu|India",
+        "Highlighting": [
+            [
+                0,
+                1
+            ],
+            [
+                15,
+                16
+            ]
+        ]
+    },
+    {
+        "PlaceId": "CCU",
+        "PlaceName": "Kolkata",
+        "LocalizedPlaceName": "",
+        "CountryId": "IN",
+        "CityId": "ICCU",
+        "CountryName": "India",
+        "PlaceNameEn": "",
+        "RegionId": "",
+        "CityName": "Calcutta",
+        "CityNameEn": "",
+        "GeoId": "128668366",
+        "GeoContainerId": "27539726",
+        "Location": "22.6525,88.449167",
+        "ResultingPhrase": "Kolkata (CCU), Calcutta|West Bengal|India",
+        "Highlighting": [
+            [
+                9,
+                10
+            ],
+            [
+                15,
+                16
+            ]
+        ]
+    },
+    {
+        "PlaceId": "COK",
+        "PlaceName": "Kochi",
+        "LocalizedPlaceName": "",
+        "CountryId": "IN",
+        "CityId": "ICOK",
+        "CountryName": "India",
+        "PlaceNameEn": "",
+        "RegionId": "",
+        "CityName": "Cochin",
+        "CityNameEn": "",
+        "GeoId": "95673550",
+        "GeoContainerId": "27539883",
+        "Location": "9.944444,76.271944",
+        "ResultingPhrase": "Kochi (COK), Cochin|Ernākulam|Kerala|India",
+        "Highlighting": [
+            [
+                7,
+                8
+            ],
+            [
+                13,
+                14
+            ]
+        ]
+    },
+    {
+        "PlaceId": "LKO",
+        "PlaceName": "Chaudhary Charan Singh International",
+        "LocalizedPlaceName": "",
+        "CountryId": "IN",
+        "CityId": "ILKO",
+        "CountryName": "India",
+        "PlaceNameEn": "",
+        "RegionId": "",
+        "CityName": "Lucknow",
+        "CityNameEn": "",
+        "GeoId": "128668794",
+        "GeoContainerId": "27544082",
+        "Location": "26.760278,80.880278",
+        "ResultingPhrase": "Chaudhary Charan Singh International (LKO), Lucknow|Uttar Pradesh|India",
+        "Highlighting": [
+            [
+                0,
+                1
+            ],
+            [
+                10,
+                11
+            ]
+        ]
+    },
+    {
+        "PlaceId": "CCJ",
+        "PlaceName": "Kozhikode",
+        "LocalizedPlaceName": "",
+        "CountryId": "IN",
+        "CityId": "ICCJ",
+        "CountryName": "India",
+        "PlaceNameEn": "",
+        "RegionId": "",
+        "CityName": "Calicut",
+        "CityNameEn": "",
+        "GeoId": "128668365",
+        "GeoContainerId": "27539718",
+        "Location": "11.133333,75.95",
+        "ResultingPhrase": "Kozhikode (CCJ), Calicut|Kozhikode|Kerala|India",
+        "Highlighting": [
+            [
+                11,
+                12
+            ],
+            [
+                17,
+                18
+            ]
+        ]
+    },
+    {
+        "PlaceId": "IXC",
+        "PlaceName": "Chandigarh",
+        "LocalizedPlaceName": "",
+        "CountryId": "IN",
+        "CityId": "IIXC",
+        "CountryName": "India",
+        "PlaceNameEn": "",
+        "RegionId": "",
+        "CityName": "Chandigarh",
+        "CityNameEn": "",
+        "GeoId": "128667255",
+        "GeoContainerId": "27542922",
+        "Location": "30.671944,76.790556",
+        "ResultingPhrase": "Chandigarh (IXC), Chandigarh|Chandigarh|India",
+        "Highlighting": [
+            [
+                0,
+                1
+            ],
+            [
+                18,
+                19
+            ],
+            [
+                29,
+                30
+            ]
+        ]
+    },
+    {
+        "PlaceId": "CDG",
+        "PlaceName": "Paris Charles de Gaulle",
+        "LocalizedPlaceName": "",
+        "CountryId": "FR",
+        "CityId": "PARI",
+        "CountryName": "France",
+        "PlaceNameEn": "",
+        "RegionId": "",
+        "CityName": "Paris",
+        "CityNameEn": "",
+        "GeoId": "95565041",
+        "GeoContainerId": "27539733",
+        "Location": "49.009722,2.548611",
+        "ResultingPhrase": "Paris Charles de Gaulle (CDG), Paris|Île-de-France|France",
+        "Highlighting": [
+            [
+                6,
+                7
+            ],
+            [
+                25,
+                26
+            ]
+        ]
+    },
+    {
+        "PlaceId": "ORD",
+        "PlaceName": "Chicago O'Hare International",
+        "LocalizedPlaceName": "",
+        "CountryId": "US",
+        "CityId": "CHIA",
+        "CountryName": "United States",
+        "PlaceNameEn": "",
+        "RegionId": "IL",
+        "CityName": "Chicago",
+        "CityNameEn": "",
+        "GeoId": "95673392",
+        "GeoContainerId": "27544891",
+        "Location": "41.978056,-87.906111",
+        "ResultingPhrase": "Chicago O'Hare International (ORD), Chicago|Cook|Illinois|United States",
+        "Highlighting": [
+            [
+                0,
+                1
+            ],
+            [
+                36,
+                37
+            ],
+            [
+                44,
+                45
+            ]
+        ]
+    },
+    {
+        "PlaceId": "SIN",
+        "PlaceName": "Singapore Changi",
+        "LocalizedPlaceName": "",
+        "CountryId": "SG",
+        "CityId": "SINS",
+        "CountryName": "Singapore",
+        "PlaceNameEn": "",
+        "RegionId": "",
+        "CityName": "Singapore",
+        "CityNameEn": "",
+        "GeoId": "95673375",
+        "GeoContainerId": "27546111",
+        "Location": "1.350278,103.994444",
+        "ResultingPhrase": "Singapore Changi (SIN), Singapore|Singapore",
+        "Highlighting": [
+            [
+                10,
+                11
+            ]
+        ]
+    }
+]
+}
